@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,17 +20,14 @@
       padding: 2rem;
     }
     img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
+      max-width: 100%;
     }
     h1 {
       font-size: 2rem;
       margin: 0.5rem 0;
     }
     p {
-      max-width: 600px;
+      max-width: 700px;
       padding: 0 1rem;
     }
     .links {
@@ -46,51 +42,84 @@
     .links a:hover {
       text-decoration: underline;
     }
-    .uniswap-button {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 1rem 2rem;
-      background-color: #ff007a;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-    .uniswap-button:hover {
-      background-color: #e6006b;
-    }
     footer {
       margin-top: 2rem;
       font-size: 0.9rem;
       color: #888;
     }
+    .swap-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ff2ebc;
+      color: white;
+      font-weight: bold;
+      padding: 1rem 1.5rem;
+      border-radius: 16px;
+      text-decoration: none;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      max-width: 90%;
+    }
+    .swap-button img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin: 0 0.5rem;
+    }
+    .swap-button span {
+      margin: 0.2rem 0.5rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://raw.githubusercontent.com/Ballerina-Cappuccina/BallerinaCappuccinalist/main/Ballerina-Cappuccina-Icon-512x512-1.png" alt="Ballerina Cappuccina logo" />
+    <img src="https://raw.githubusercontent.com/Ballerina-Cappuccina/BallerinaCappuccinalist/main/Ballerina-Cappuccina-Icon-512x512-1.png" alt="Ballerina Cappuccina logo" width="160" height="160" style="border-radius: 50%;" />
     <h1>Ballerina Cappuccina (BALERINA)</h1>
-    <p>A meme token on the Polygon network</p>
+    <p>Mem token on the Polygon network</p>
     <p>Contract: <code>0x555d6b57fAa632De007a204012a3541CCB6Ef4C9</code></p>
     <p>
-      Ballerina Cappuccina is a fun and sassy meme token created for the community. Inspired by Italian absurdism, espresso, and pure energy. BALERINA isn't just a token, it’s a lifestyle!
+      Ballerina Cappuccina is a fun and bold meme-token built for the community. Inspired by Italian absurdity, espresso, and pure movement energy. BALERINA is not just a token – it's a lifestyle!
     </p>
-    <div class="links">
-      <a href="https://t.me/BallerinaCappuccinaToken" target="_blank">Telegram</a>
-      <a href="mailto:BallerinaCappuccinaToken@gmail.com">Email</a>
-      <a href="https://www.instagram.com/BallerinaCappuccinaToken" target="_blank">Instagram</a>
-      <a href="https://x.com/ballerinaMem" target="_blank">X (Twitter)</a>
-      <a href="https://polygonscan.com/address/0x555d6b57fAa632De007a204012a3541CCB6Ef4C9" target="_blank">View Contract on Polygonscan</a>
-    </div>
-    <a class="uniswap-button" href="https://app.uniswap.org/swap?inputCurrency=0x0000000000000000000000000000000000001010&outputCurrency=0x555d6b57fAa632De007a204012a3541CCB6Ef4C9&chain=polygon" target="_blank">
-      <img src="https://raw.githubusercontent.com/Ballerina-Cappuccina/BallerinaCappuccinalist/main/Ballerina-Cappuccina-Icon-512x512-1.png" alt="BALERINA logo" style="width: 20px; vertical-align: middle; border-radius: 50%;" />
-      <strong> BALERINA</strong> /
-      <img src="https://cryptologos.cc/logos/polygon-matic-logo.png?v=032" alt="MATIC logo" style="width: 20px; vertical-align: middle; border-radius: 50%;" />
-      <strong> POL (MATIC)</strong> on Uniswap
-    </a>
-  </header>
-  <footer>
+    <p>
+      This project was created by my son, inspired by Italian meme culture. It fills him with joy to see how warmly people have reacted to the idea. We are deeply grateful to everyone who has shown support for Ballerina Cappuccina.
+    </p>
+    <p>
+      The tokenomics are designed with early protection in mind. A 25% sell tax applies if tokens are sold within 24 hours of purchase — this is a temporary measure to stabilize the price in the early phase, as the initial liquidity pool is small and very sensitive to price movements.
+    </p>
+    <p>
+      Additionally, a small 0.1% tax is applied to all transactions. These fees will be used to support the project and will flow back into the liquidity pool.
+    </p>
+    <p>
+      The contract has several protective measures:
+      <ul style="text-align: left; display: inline-block;">
+        <li>No new tokens can be minted.</li>
+        <li>Liquidity pool cannot be withdrawn.</li>
+        <li>Ownership is retained only during the early phase to ensure no malicious actions can harm the community.</li>
+      </ul>
+    </p>
+    <p>
+      Once the project reaches a stable and mature state, all special privileges and controls will be renounced. This is a community token — your trust and enthusiasm are everything.
+    </p><div class="links">
+  <a href="https://t.me/BallerinaCappuccinaToken" target="_blank">Telegram</a>
+  <a href="mailto:BallerinaCappuccinaToken@gmail.com">Email</a>
+  <a href="https://www.instagram.com/BallerinaCappuccinaToken" target="_blank">Instagram</a>
+  <a href="https://x.com/ballerinaMem" target="_blank">X (Twitter)</a>
+  <a href="https://polygonscan.com/address/0x555d6b57fAa632De007a204012a3541CCB6Ef4C9" target="_blank">View Contract on Polygonscan</a>
+</div>
+
+<a class="swap-button"
+   href="https://app.uniswap.org/swap?inputCurrency=0x0000000000000000000000000000000000001010&outputCurrency=0x555d6b57fAa632De007a204012a3541CCB6Ef4C9&chain=polygon"
+   target="_blank">
+  <img src="https://raw.githubusercontent.com/Ballerina-Cappuccina/BallerinaCappuccinalist/main/Ballerina-Cappuccina-Icon-512x512-1.png" alt="BALERINA logo" />
+  <span>BALERINA /</span>
+  <img src="https://cryptologos.cc/logos/polygon-matic-logo.png?v=026" alt="POL logo" />
+  <span>POL (MATIC)</span>
+  <div style="flex-basis: 100%; height: 0;"></div>
+  <span style="margin-top: 0.5rem;">on Uniswap</span>
+</a>
+
+  </header>  <footer>
     &copy; 2025 Ballerina Cappuccina Token
   </footer>
 </body>
